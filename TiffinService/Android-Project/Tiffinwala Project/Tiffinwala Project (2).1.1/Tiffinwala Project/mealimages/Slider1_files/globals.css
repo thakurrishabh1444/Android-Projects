@@ -1,0 +1,70 @@
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Comfortaa, Kalam, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+  
+}
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+html{
+  --primary-color:#cb202d;
+  --primary-light-color:#ff5b57;
+  --primary-dark-color:#920005;
+  --secondary-color:#087f23;
+  --secondary-light-color:#4caf50;
+  --secondary-dark-color:#005100;
+  --textOrIconOverPrimarySecondary:#ffffff;
+  --black-color:#000000;
+  --primary-text-color:#212121;
+  --secondary-text-color:#757575;
+  --divide-color:#f4f4f2;
+  --dark-divide-color:#ddd;
+  --white-color:#ffffff;
+  --translucent:#7777;
+  --blue-title : #0070f3;
+  --disable-color:#ddddddaa
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.material-icons {
+  color: var(--secondary-dark-color);
+}
+
+.my-ripple {
+  border-radius: 50%;
+}
+
+/* overriding row children width 100% in bootstrap module */
+/* .row > * {
+  width: auto !important;
+} */
+
+.form-check-label {
+  text-align: justify;
+}
+
+h5 {
+  font-size: 1rem !important;
+}
+.h5 {
+  font-size: 1rem !important;
+}
+
+input:focus{
+  outline:0px;
+}

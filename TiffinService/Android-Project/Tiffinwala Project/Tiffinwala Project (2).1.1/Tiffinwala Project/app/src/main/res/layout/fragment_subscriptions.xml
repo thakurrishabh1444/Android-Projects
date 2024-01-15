@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.subscriptions"
+    android:orientation="vertical"
+    android:background="@drawable/background1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupSubscriptionOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonVeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="Veg"
+                android:textColor="#30D34A" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNonVeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Non-Veg"
+                android:textColor="@color/dark_red" />
+
+        </RadioGroup>
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Weekly"
+                android:textColor="@color/white"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButtonMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dp"
+                android:text="Monthly"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQuaterly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Quaterly"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupSubscriptionOptionsMeal_Selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonLunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Lunch"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:text="Dinner"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBoth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Both"
+                android:textColor="@color/white" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:backgroundTint="#2F7875"
+            android:id="@+id/selectDateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Select Date"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date"/>
+
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="110dp"/>
+            <TextView
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:id="@+id/End_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_gravity="right"
+            android:layout_marginLeft="110dp"
+            android:id="@+id/totalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="TOTAL AMOUNT :"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/buttonProceedToPayment"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#F47A53"
+            android:onClick="submit"
+            android:text="PROCEED TO PAYMENT"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:background="#000080"-->
+<!--            android:id="@+id/remainingDaysTextView"-->
+<!--            android:text="REMAINING DAYS OF SUBSCRIPTION :"-->
+<!--            android:textSize="18dp"-->
+<!--            android:autoSizeTextType="uniform"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:textColor="#FFD700"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            ></TextView>-->
+
+
+
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginLeft="220dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="#FFD700"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="#000080"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/countOfDaysTextView"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="  "&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="10dp"></TextView>&ndash;&gt;-->
+
+
+<!--        <TextView-->
+
+<!--            android:onClick="subscribenow"-->
+<!--            android:layout_marginLeft="220dp"-->
+<!--            android:textColor="#FFD700"-->
+<!--            android:background="#F08080"-->
+<!--            android:id="@+id/subscribenow"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:textSize="10dp"-->
+<!--            android:text=" Subsribe now"-->
+<!--            >-->
+
+<!--        </TextView>-->
+
+
+
+<!--    </LinearLayout>-->
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="" />-->
+
+
+    <!--        <Button-->
+    <!--            android:id="@+id/navigateButton"-->
+    <!--            android:onClick="navigateButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            ></Button>-->
+
+
+
+    //******************************************************
+
+
+
+
+
+
+
+
+    //*********************************************************
+
+
+</FrameLayout>

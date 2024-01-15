@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:src="@drawable/restaurant_logo" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiffinwala"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available in Phase1,Phase2 and Phase3 - Hinjawadi Pune "
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 2023 Tiffinwala"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/facebookImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/facebook_logo"
+            android:clickable="true"
+            android:tag="facebook" />
+
+        <ImageView
+            android:id="@+id/twitterImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/twitter_logo"
+            android:clickable="true"
+            android:tag="twitter" />
+
+        <ImageView
+            android:id="@+id/instagramImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/instagram_logo"
+            android:clickable="true"
+            android:tag="instagram" />
+
+    </LinearLayout>
+
+</LinearLayout>

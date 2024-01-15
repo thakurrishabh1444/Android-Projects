@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Login"
+    android:background="@drawable/background"
+    >
+
+<!--    <ImageView-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:id="@+id/logoImageView"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/logo"-->
+<!--        android:layout_marginBottom="32dp" />-->
+
+    <EditText
+        android:layout_marginTop="270dp"
+        android:textColor="@color/white"
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#B5ACAC"/>
+
+    <EditText
+        android:textColorHint="#B5ACAC"
+        android:textColor="@color/white"
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+    <CheckBox
+        android:id="@+id/checkBoxRememberMe"
+        android:text="Remember Me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:backgroundTint="#2F7875"
+        android:textColor="@android:color/white"
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login" />
+
+
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/registerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Don't have an account? Register here" />
+
+
+
+</LinearLayout>

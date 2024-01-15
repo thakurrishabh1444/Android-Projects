@@ -1,0 +1,58 @@
+mysql> create database Tiffinwala;
+======================================================================================
+Susbcription
+
+
+CREATE TABLE subscriptions (
+    subscriptionId INT PRIMARY KEY,
+    name VARCHAR(50),
+    description VARCHAR(200),
+    selectedSubscription VARCHAR(200),
+    start_date DATE,
+    end_date DATE,
+    selectedMenu VARCHAR(200)
+);
+
+=======================================================================================
+User
+
+
+CREATE TABLE users (
+    userId INT PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(100),
+    phone VARCHAR(20),
+    address VARCHAR(100),
+    area VARCHAR(50),
+    subscriptionID INT,
+    FOREIGN KEY (subscriptionID) REFERENCES subscriptions(subscriptionID)
+);
+
+=========================================================================================
+Order
+
+CREATE TABLE orders (
+    orderId INT PRIMARY KEY,
+    totalAmount DECIMAL(10, 2),
+    subscriptionId INT,
+    userId INT,
+    FOREIGN KEY (subscriptionId) REFERENCES subscriptions(subscriptionId),
+    FOREIGN KEY (userId) REFERENCES users(userId)
+);
+=========================================================================================
+Payment
+
+CREATE TABLE payments (
+    paymentId INT PRIMARY KEY,
+    orderId INT,
+    userId INT,
+    paymentAmount DECIMAL(10, 2),
+    paymentStatus VARCHAR(20),
+    paymentDate DATE,
+    FOREIGN KEY (orderId) REFERENCES orders(orderId),
+    FOREIGN KEY (userId) REFERENCES users(userId)
+);
+
+
+
+
